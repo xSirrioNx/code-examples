@@ -1,0 +1,78 @@
+<div (@cardFlip.done)="onAnimationEvent($event)" (click)="cardClicked()"
+     [@cardFlip]="{value: state, params: {rotate: rotateAngel}}" class="card pointer relative w-full">
+  <div [ngClass]="{ invisible: mirrored, current: current}"
+       class="face front absolute flex flex-col items-center">
+    <ng-container *ngTemplateOutlet="header"></ng-container>
+    <ng-container *ngTemplateOutlet="level.completed? stats : image"></ng-container>
+    <ng-container *ngTemplateOutlet="footer"></ng-container>
+  </div>
+
+
+  <div [ngClass]="{ invisible: !mirrored, mirrored: mirrored, current: current}"
+       class="face rear absolute flex flex-col items-center">
+    <ng-container *ngTemplateOutlet="header"></ng-container>
+    <ng-container *ngTemplateOutlet="level.completed? image : stats"></ng-container>
+    <ng-container *ngTemplateOutlet="footer"></ng-container>
+  </div>
+</div>
+
+<app-tile-animation
+  *ngIf="showTip"
+  [fps]="20"
+  [intermediate]="true"
+  [smoothCanvas]="true"
+  animationName="click"
+  class="absolute tip"
+  fileName="tut_click"
+  filePath="assets/animations/tips"
+  type="canvas"
+></app-tile-animation>
+
+
+<ng-template #image>
+  <div [ngStyle]="{'background-image': 'url(/assets/images/lvl-' + level.id + '.jpg)'}"
+       class="relative image w-full z-50 cursor-pointer flex-grow">
+    <div class="square absolute top-0 left-0 bg-white">
+      <img class="z-10 object-contain" src="/assets/images/coin.png">
+      <div class="corner z-20 absolute inset-0"></div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #stats>
+  <div class="relative stats w-full z-50 cursor-pointer flex-grow">
+    <div class="stats-wrapper absolute inset-0 bg-black text-yellow flex flex-col">
+      <ng-container>
+        <div class="rating-title flex justify-center items-center text-white text-bold">Рейтинг</div>
+        <div class="rating-wrapper flex flex-grow">
+          <app-rating
+            [coins]="level.coins"
+            [completed]="level.completed"
+            [isSmall]="true"
+            [rating]="rating"
+            [sex]="sex"
+          ></app-rating>
+        </div>
+      </ng-container>
+
+    </div>
+
+  </div>
+</ng-template>
+
+<ng-template #header>
+  <div class="flex flex-col header relative justify-center items-center">
+    <div class="header__text z-20">
+      <span class="name">{{ level.name }}</span>
+    </div>
+  </div>
+  <div class="absolute w-full h-full header__background top-0"></div>
+</ng-template>
+
+<ng-template #footer>
+  <div (click)="onLevelClick($event)" class="footer relative w-full cursor-pointer">
+    <div class="footer__inner flex w-full font-extrabold justify-center">
+      Играть!
+    </div>
+  </div>
+</ng-template>

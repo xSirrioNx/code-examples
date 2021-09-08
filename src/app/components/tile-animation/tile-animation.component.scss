@@ -1,0 +1,13 @@
+:host {
+  height: min-content;
+
+  .wrapper {
+    position: relative;
+
+    .animation {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

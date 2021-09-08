@@ -1,0 +1,24 @@
+<div
+  *ngIf="type === 'html'"
+  [ngStyle]="{
+    'width': (containerWidth$ | async) + 'px',
+    'height': (containerHeight$ | async) + 'px'
+  }"
+  class="relative"
+>
+  <div
+    [ngStyle]="{
+    'width': (backgroundWidth$ | async) + 'px',
+    'height': (backgroundHeight$| async) + 'px',
+    'background-position': backgroundPosition$ | async,
+    'background-size': backgroundSize$ | async,
+    'background-image': 'url(' + filePath + '/' + fileName + '.' + imageExtension + ')',
+    'background-repeat': 'no-repeat',
+    'top': animationY$ | async,
+    'left': animationX$ | async
+
+  }"
+    class="absolute bottom-0 right-0"
+  ></div>
+</div>
+<canvas #canvas *ngIf="type === 'canvas'"></canvas>

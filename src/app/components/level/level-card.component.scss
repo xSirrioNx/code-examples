@@ -1,0 +1,132 @@
+:host {
+  display: block;
+  perspective: 10rem;
+  position: relative;
+
+  * {
+    user-select: none;
+  }
+}
+
+.tip {
+  left: 1.5rem;
+}
+
+.card {
+  height: 6.359375rem;
+  transform-style: preserve-3d;
+
+  .face {
+    border-radius: inherit;
+    backface-visibility: hidden;
+    min-width: 100%;
+    min-height: 100%;
+
+    &.current {
+      top: -0.546875rem;
+      right: -0.2rem;
+      left: -0.2rem;
+      bottom: 0;
+    }
+
+    .image {
+      overflow: hidden;
+      border-radius: 0.3125rem 0.3125rem 0 0;
+      //border-radius: 0;
+
+      background-size: cover;
+
+      .square {
+        width: 0.78125rem;
+        height: 0.78125rem;
+        border-bottom-right-radius: 100%;
+
+        img {
+          width: 0.625rem;
+          margin-top: 0.03125rem;
+          margin-left: 0.046875rem;
+        }
+
+        .corner {
+          background: url(/assets/images/corner.svg) no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+    .stats {
+      border-radius: 0.3125rem 0.3125rem 0 0;
+      //border-radius: 0;
+
+      .stats-wrapper {
+        overflow: hidden;
+        border-radius: inherit;
+        background: white;
+
+        .rating-title {
+          font-size: 0.390625rem;
+          background: #02252B;
+          color: #FFE500;
+        }
+
+        .rating-wrapper {
+          //padding: 0.25rem;
+
+          app-rating {
+            width: 100%;
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .footer {
+      padding-bottom: 0.078125rem;
+      border-radius: 0 0 0.3125rem 0.3125rem;
+      background: #C7AC00;
+
+      &__inner {
+        border-radius: inherit;
+        font-size: 0.625rem;
+        color: #02252B;
+        background: #FFE500;
+      }
+    }
+
+    .header {
+      width: 82%;
+      height: 0.796875rem;
+      //z-index: 1;
+      padding: 0 0.3125rem;
+
+      &__background {
+        width: 82%;
+        height: 1.703125rem;
+        background: linear-gradient(0deg, #2F2F2F 29.17%, #777777 70.83%);
+        opacity: 0.85;
+        border-radius: 0.3125rem 0.3125rem 0 0;
+      }
+
+      &__text {
+        font-weight: 900;
+        //font-size: 0.390625rem;
+        text-align: center;
+        font-size: 0.28125rem;
+        line-height: 1;
+
+        .name {
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.mirrored {
+  transform: rotateY(180deg);
+}

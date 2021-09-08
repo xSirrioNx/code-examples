@@ -1,0 +1,229 @@
+{
+  "textures": [
+    {
+      "image": "coins-loss.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 728,
+        "h": 750
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "coins-loss/09",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 19,
+            "y": 19,
+            "w": 419,
+            "h": 242
+          },
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 242
+          }
+        },
+        {
+          "filename": "coins-loss/08",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 38,
+            "y": 37,
+            "w": 382,
+            "h": 224
+          },
+          "frame": {
+            "x": 0,
+            "y": 242,
+            "w": 382,
+            "h": 224
+          }
+        },
+        {
+          "filename": "coins-loss/07",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 57,
+            "y": 56,
+            "w": 344,
+            "h": 205
+          },
+          "frame": {
+            "x": 382,
+            "y": 242,
+            "w": 344,
+            "h": 205
+          }
+        },
+        {
+          "filename": "coins-loss/06",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 76,
+            "y": 75,
+            "w": 306,
+            "h": 186
+          },
+          "frame": {
+            "x": 419,
+            "y": 0,
+            "w": 306,
+            "h": 186
+          }
+        },
+        {
+          "filename": "coins-loss/05",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 95,
+            "y": 94,
+            "w": 268,
+            "h": 167
+          },
+          "frame": {
+            "x": 382,
+            "y": 447,
+            "w": 268,
+            "h": 167
+          }
+        },
+        {
+          "filename": "coins-loss/04",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 114,
+            "y": 112,
+            "w": 230,
+            "h": 149
+          },
+          "frame": {
+            "x": 0,
+            "y": 466,
+            "w": 230,
+            "h": 149
+          }
+        },
+        {
+          "filename": "coins-loss/03",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 133,
+            "y": 131,
+            "w": 192,
+            "h": 130
+          },
+          "frame": {
+            "x": 230,
+            "y": 614,
+            "w": 192,
+            "h": 130
+          }
+        },
+        {
+          "filename": "coins-loss/02",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 152,
+            "y": 150,
+            "w": 154,
+            "h": 111
+          },
+          "frame": {
+            "x": 0,
+            "y": 615,
+            "w": 154,
+            "h": 111
+          }
+        },
+        {
+          "filename": "coins-loss/01",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 171,
+            "y": 169,
+            "w": 116,
+            "h": 92
+          },
+          "frame": {
+            "x": 230,
+            "y": 466,
+            "w": 116,
+            "h": 92
+          }
+        },
+        {
+          "filename": "coins-loss/00",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 457,
+            "h": 262
+          },
+          "spriteSourceSize": {
+            "x": 190,
+            "y": 187,
+            "w": 78,
+            "h": 75
+          },
+          "frame": {
+            "x": 650,
+            "y": 523,
+            "w": 78,
+            "h": 75
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.0"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "textures": [
+    {
+      "image": "boy.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 620,
+        "h": 420
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "hover",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 216,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 216,
+            "h": 420
+          },
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 216,
+            "h": 420
+          }
+        },
+        {
+          "filename": "click",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 202,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 202,
+            "h": 401
+          },
+          "frame": {
+            "x": 216,
+            "y": 0,
+            "w": 202,
+            "h": 401
+          }
+        },
+        {
+          "filename": "default",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 202,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 202,
+            "h": 401
+          },
+          "frame": {
+            "x": 418,
+            "y": 0,
+            "w": 202,
+            "h": 401
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.0"
+  }
+}

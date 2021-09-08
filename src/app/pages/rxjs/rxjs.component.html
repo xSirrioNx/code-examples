@@ -1,0 +1,28 @@
+<div class="mat-typography">
+  <h2>
+    Задача:<br>
+    До запроса на получение данных с сервера(getDataHttp() в сервисе), необходимо сказать отправить запрос на обновление
+    данных сервером из стороннего сервиса(refreshDataHttp() в сервисе).<br>
+    В ответ придет объект с ID запроса и статусом PROCESSING, или статус SEND_TIMEOUT (ID в таком случае не передается).<br>
+    Если получили ID запроса, то начинаем поллинг статуса этого запроса (getStatusHttp() в сервисе).<br>
+    Поллинг должен происходить до получения статус DONE или таймаута в N секунд.<br>
+    В любом случае, в конце должен происходить запрос основных данных.<br>
+    Если поллинг вернул DONE, то помечаем данные как обновленные (refreshed: true), в остальных случаях помечаем как не
+    обновленные.
+  </h2>
+</div>
+<div class="grid grid-cols-4 gap-2">
+  <mat-card *ngFor="let ex of examples">
+    <mat-card-header>
+      <mat-card-title>{{ ex.title }}</mat-card-title>
+      <mat-card-subtitle [innerHTML]="ex.description"></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <code>
+      <pre>
+        {{ ex.resultsArray$ | async | json }}
+      </pre>
+      </code>
+    </mat-card-content>
+  </mat-card>
+</div>

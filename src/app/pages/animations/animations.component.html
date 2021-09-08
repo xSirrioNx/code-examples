@@ -1,0 +1,87 @@
+<div class="mat-typography">
+  <a href="https://nakopilka.sberlabs.com/" target="_blank">https://nakopilka.sberlabs.com/</a>
+  <h2>
+    В данном проекте используется PhaserJS для реализации самого "раннера".<br>
+    Но что бы упростить разработку и не пихать вообще всю верстку приложения в игру использовали Angular (роутинг,
+    страницы, логика)<br>
+    В ангуларе потребовалось использовать анимации, аналогичные тем, которые использует движок фазера.<br>
+    Пришлось реализовать компонент, который умеет с ними работать.
+  </h2>
+</div>
+
+<div class="grid grid-cols-4 gap-2">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Зацикленная анимация</mat-card-title>
+      <mat-card-subtitle>Просто бесконечная анимация</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <app-tile-animation
+        [animationName]="'run'"
+        [intermediate]="true"
+        fileName="male"
+        filePath="/assets/animations/player"
+        objectName="male"
+        type="html"
+      ></app-tile-animation>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Зацикленная анимация</mat-card-title>
+      <mat-card-subtitle>Динамическая смена состояний по таймеру</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <app-tile-animation
+        [animationName]="firstAnimationState"
+        [intermediate]="true"
+        fileName="male"
+        filePath="/assets/animations/player"
+        objectName="male"
+        type="html"
+      ></app-tile-animation>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Анимация до определенного шага</mat-card-title>
+      <mat-card-subtitle>Количество шагов меняется на рандомное по окончанию предыдущей анимации</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <app-tile-animation
+        (animationEnd)="onCoinsAnimationEnd($event)"
+        [fps]="framesCount * 1.5"
+        [framesCount]="framesCount"
+        [intermediate]="true"
+        animationName="bar"
+        class="coins"
+        fileName="coins_bar"
+        filePath="assets/animations/coin"
+      ></app-tile-animation>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Смена состояния по событию</mat-card-title>
+      <mat-card-subtitle>Изменяется состояние на mouseEnter, mouseLeave, click</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content style="height: 420px; width: 360px; justify-content: flex-start">
+      <app-tile-animation
+        (click)="boyAnimation = 'click'"
+        (mouseenter)="boyAnimation = 'hover'"
+        (mouseleave)="boyAnimation = 'default'"
+        [animationName]="boyAnimation"
+        [singleFrame]="true"
+        [smoothCanvas]="true"
+        fileName="boy"
+        filePath="/assets/animations/player"
+        type="html"
+      ></app-tile-animation>
+    </mat-card-content>
+  </mat-card>
+
+
+</div>

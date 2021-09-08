@@ -1,0 +1,229 @@
+{
+  "textures": [
+    {
+      "image": "coins_bar.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 604,
+        "h": 566
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "bar/09",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 149,
+            "h": 301
+          },
+          "frame": {
+            "x": 5,
+            "y": 5,
+            "w": 149,
+            "h": 301
+          }
+        },
+        {
+          "filename": "bar/08",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 28,
+            "w": 149,
+            "h": 273
+          },
+          "frame": {
+            "x": 164,
+            "y": 5,
+            "w": 149,
+            "h": 273
+          }
+        },
+        {
+          "filename": "bar/07",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 56,
+            "w": 135,
+            "h": 245
+          },
+          "frame": {
+            "x": 5,
+            "y": 316,
+            "w": 135,
+            "h": 245
+          }
+        },
+        {
+          "filename": "bar/06",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 84,
+            "w": 135,
+            "h": 217
+          },
+          "frame": {
+            "x": 164,
+            "y": 288,
+            "w": 135,
+            "h": 217
+          }
+        },
+        {
+          "filename": "bar/05",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 112,
+            "w": 135,
+            "h": 189
+          },
+          "frame": {
+            "x": 323,
+            "y": 5,
+            "w": 135,
+            "h": 189
+          }
+        },
+        {
+          "filename": "bar/04",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 140,
+            "w": 135,
+            "h": 161
+          },
+          "frame": {
+            "x": 323,
+            "y": 204,
+            "w": 135,
+            "h": 161
+          }
+        },
+        {
+          "filename": "bar/03",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 4,
+            "y": 168,
+            "w": 131,
+            "h": 133
+          },
+          "frame": {
+            "x": 309,
+            "y": 375,
+            "w": 131,
+            "h": 133
+          }
+        },
+        {
+          "filename": "bar/02",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 4,
+            "y": 196,
+            "w": 131,
+            "h": 105
+          },
+          "frame": {
+            "x": 468,
+            "y": 5,
+            "w": 131,
+            "h": 105
+          }
+        },
+        {
+          "filename": "bar/01",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 4,
+            "y": 224,
+            "w": 129,
+            "h": 77
+          },
+          "frame": {
+            "x": 468,
+            "y": 120,
+            "w": 129,
+            "h": 77
+          }
+        },
+        {
+          "filename": "bar/00",
+          "rotated": false,
+          "trimmed": true,
+          "sourceSize": {
+            "w": 149,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 16,
+            "y": 252,
+            "w": 117,
+            "h": 49
+          },
+          "frame": {
+            "x": 468,
+            "y": 207,
+            "w": 117,
+            "h": 49
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7"
+  }
+}

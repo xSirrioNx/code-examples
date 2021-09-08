@@ -1,0 +1,75 @@
+.wrapper {
+  //row-gap: 0.4375rem;
+
+  .row {
+    column-gap: 0.265625rem;
+    grid-template-columns: max-content 1fr max-content;
+    padding: 0.21875rem 0.203125rem 0.21875rem 0.359375rem;
+
+    &.real {
+      background: #4ECC22;
+
+      .name, .coins {
+        color: white;
+      }
+    }
+
+    .avatar {
+      width: 1.0625rem;
+      height: 1.0625rem;
+    }
+
+    .name {
+      font-size: 0.46875rem;
+      color: #209209;
+    }
+
+    .coins {
+      color: #FF7A00;
+
+      span {
+        font-size: 0.46875rem;
+      }
+
+      img {
+        width: 0.625rem;
+        margin-left: 0.125rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &.small {
+    //row-gap: 0.20625rem;
+
+
+    .row {
+      padding: 0.140625rem 0.140625rem 0.140625rem 0.234375rem;
+      column-gap: 0.171875rem;
+
+      &.real {
+        background: #4ECC22;
+      }
+
+      .avatar {
+        width: 0.6875rem;
+        height: 0.6875rem;
+      }
+
+      .name {
+        font-size: 0.3125rem;
+      }
+
+      .coins {
+        span {
+          font-size: 0.3125rem;
+        }
+
+        img {
+          width: 0.40625rem;
+          margin-left: 0.078125rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div [class.small]="isSmall" class="wrapper grid auto-rows-auto w-full">
+  <div *ngFor="let player of players" [class.real]="player.isReal" class="row grid items-center w-full">
+    <div class="avatar relative">
+      <img [src]="player.image" class="rounded-full absolute">
+    </div>
+
+    <div class="name font-bold">{{ player.name }}</div>
+    <div class="coins font-bold flex">
+      <span>{{ player.coins }}</span>
+      <img src="/assets/images/coin.png">
+    </div>
+  </div>
+</div>
